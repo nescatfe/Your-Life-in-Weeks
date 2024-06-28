@@ -19,7 +19,7 @@
 }
 
 .week.filled {
-  background-color: #DAF7A6;
+  background-color: #FFB861;
 }
 
 .number {
@@ -42,7 +42,7 @@
   position: absolute;
   font-size: 13px;
   font-weight: bold;
-  color: red;
+  color: #DC143C;
   padding: 2px 5px;
   border-radius: 13px;
   transform: translate(-50%, -50%) rotate(-45deg);
