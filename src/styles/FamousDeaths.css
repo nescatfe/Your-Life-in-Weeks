@@ -20,6 +20,7 @@
 }
 
 .famous-death-marker span {
+  background-color: rgba(255, 255, 255, 0.8);
   position: absolute;
   left: 7px;
   top: -18px;

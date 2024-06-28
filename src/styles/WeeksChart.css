@@ -19,12 +19,12 @@
 }
 
 .week.filled {
-  background-color: #3498db;
+  background-color: #DAF7A6;
 }
 
 .number {
   position: absolute;
-  font-size: 10px;
+  font-size: 12px;
   color: #888;
 }
 
@@ -43,10 +43,9 @@
   font-size: 13px;
   font-weight: bold;
   color: red;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 2px 5px;
   border-radius: 13px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-45deg);
   white-space: nowrap;
   z-index: 10;
 }

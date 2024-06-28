@@ -5,8 +5,8 @@ const ComparisonSelector = ({ onComparisonChange }) => {
   return (
     <div className="comparison-container">
     <h2 className="chart-title">
-    <span className="blue">A 90-Year Human Life in </span>
-    <span className="red">Chart:</span>
+    <span className="red">A 90-Year </span>
+    <span className="blue">Human Life in Chart:</span>
     </h2>
       <select 
         className="comparison-selector"

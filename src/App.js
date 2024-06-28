@@ -13,7 +13,10 @@ function App() {
   return (
     <div className="App">
     <title>Your Life in Weeks</title>
-      <h1>Hitung Sisa Minggu di Hidupmu</h1>
+    <h1 className="chart-title">
+    <span className="blue">Hidup itu </span>
+    <span className="red">Singkat</span>
+    </h1>
       <BirthdateForm onBirthdateChange={setBirthdate} />
       <ComparisonSelector onComparisonChange={setComparison} />
       {birthdate && (

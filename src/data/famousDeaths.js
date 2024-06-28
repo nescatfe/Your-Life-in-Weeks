@@ -5,7 +5,6 @@ export const famousDeaths = [
   { name: "Jimi Hendrix", week: 27 * 52 + 38 },
   { name: "Amy Winehouse", week: 27 * 52 + 36 },
   { name: "Marilyn Monroe", week: 36 * 52 },
-  { name: "Martin Luther King", week: 39 * 52 },
   { name: "John Lennon", week: 40 * 52 },
   { name: "Elvis", week: 42 * 52 + 33 },
   { name: "JFK", week: 46 * 52 + 30 },

@@ -47,7 +47,7 @@ const WeeksChart = ({ birthdate, comparison, famousDeaths, typicalAmerican }) =>
           left: `${(column * 100 / 52) + (100 / 52)}%`
         }}
         >
-        You are here.
+        You are here!
         </div>
       );
     }
