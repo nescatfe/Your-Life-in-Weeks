@@ -1,0 +1,16 @@
+export const famousDeaths = [
+  { name: "Kurt Cobain", week: 27 * 52 + 16 },
+  { name: "Jim Morrison", week: 27 * 52 + 33 },
+  { name: "Janis Joplin", week: 27 * 52 + 4 },
+  { name: "Jimi Hendrix", week: 27 * 52 + 38 },
+  { name: "Amy Winehouse", week: 27 * 52 + 36 },
+  { name: "Marilyn Monroe", week: 36 * 52 },
+  { name: "Martin Luther King", week: 39 * 52 },
+  { name: "John Lennon", week: 40 * 52 },
+  { name: "Elvis", week: 42 * 52 + 33 },
+  { name: "JFK", week: 46 * 52 + 30 },
+  { name: "Michael Jackson", week: 50 * 52 + 25 },
+  { name: "Steve Jobs", week: 56 * 52 + 9 },
+  { name: "Hitler", week: 56 * 52 + 16 },
+  { name: "Mozart", week: 35 * 52 + 49 },
+];

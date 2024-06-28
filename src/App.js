@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import WeeksChart from './components/WeeksChart';
+import BirthdateForm from './components/BirthdateForm';
+import ComparisonSelector from './components/ComparisonSelector';
+import { famousDeaths } from './data/famousDeaths';
+import { typicalAmerican } from './data/typicalAmerican';
 import './App.css';
 
 function App() {
+  const [birthdate, setBirthdate] = useState('');
+  const [comparison, setComparison] = useState('basic');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h1>Hitung Sisa Minggu di Hidupmu</h1>
+      <BirthdateForm onBirthdateChange={setBirthdate} />
+      <ComparisonSelector onComparisonChange={setComparison} />
+      {birthdate && (
+        <WeeksChart 
+          birthdate={birthdate} 
+          comparison={comparison}
+          famousDeaths={famousDeaths}
+          typicalAmerican={typicalAmerican}
+        />
+      )}
+      <footer className="App-footer">
+    <p>Based on famous <a href="https://waitbutwhy.com/2014/05/life-weeks.html" target="_blank" rel="noopener noreferrer">Your Life in Weeks</a> Article by <a href="https://waitbutwhy.com" target="_blank" rel="noopener noreferrer">Wait but Why</a>
+</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This app still under development, check out the code on <a href="https://ubur.my.id" target="_blank" rel="noopener noreferrer">Github</a> by <a href="https://ubur.my.id" target="_blank" rel="noopener noreferrer">Malvi</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </footer>
     </div>
   );
 }

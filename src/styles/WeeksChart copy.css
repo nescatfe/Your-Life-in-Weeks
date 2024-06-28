@@ -1,0 +1,87 @@
+.weeks-chart {
+  display: grid;
+  grid-template-columns: repeat(52, 1fr);
+  gap: 1px;
+  max-width: 1000px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.week {
+  aspect-ratio: 1;
+  border: 1px solid #ccc;
+}
+
+.week.filled {
+  background-color: #3498db;
+}
+
+.week.famous-death {
+  background-color: #e74c3c;
+}
+
+.week.early-years { background-color: #3498db; }
+.week.elementary-school { background-color: #2ecc71; }
+.week.middle-school { background-color: #f1c40f; }
+.week.high-school { background-color: #e67e22; }
+.week.college { background-color: #e74c3c; }
+.week.career { background-color: #9b59b6; }
+.week.retirement { background-color: #34495e; }
+
+.famous-deaths-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.famous-death-marker {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+}
+
+.famous-death-marker span {
+  position: absolute;
+  left: 5px;
+  top: -15px;
+  font-size: 10px;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+}
+
+.weeks-chart {
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  font-size: 10px;
+  color: #888;
+}
+
+.vertical {
+  left: -20px;
+  transform: translateY(-50%);
+}
+
+.horizontal {
+  top: -20px;
+  transform: translateX(-50%);
+}
+
+.you-are-here {
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2px 5px;
+  border-radius: 13px;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+}

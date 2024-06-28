@@ -1,0 +1,29 @@
+.typical-american-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  
+}
+
+.life-stage {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bolder;
+  color: #000;
+  text-align: left;
+  padding-left: 5px;
+  
+}
+
+.early-years { background-color: rgba(52, 152, 219, 0.3); }
+.elementary-school { background-color: rgba(46, 204, 113, 0.3); }
+.middle-school { background-color: rgba(241, 196, 15, 0.3); }
+.high-school { background-color: rgba(230, 126, 34, 0.3); }
+.college { background-color: rgba(231, 76, 60, 0.3); }
+.career { background-color: rgba(155, 89, 182, 0.3); }
+.retirement { background-color: rgba(52, 73, 94, 0.3); }

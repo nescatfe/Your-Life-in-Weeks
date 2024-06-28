@@ -1,0 +1,96 @@
+.chart-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 60px auto 20px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.weeks-chart {
+  display: grid;
+  grid-template-columns: repeat(52, 1fr);
+  gap: 1px;
+  position: relative;
+}
+
+.week {
+  aspect-ratio: 1;
+  border: 1px solid #ccc;
+}
+
+.week.filled {
+  background-color: #3498db;
+}
+
+.number {
+  position: absolute;
+  font-size: 10px;
+  color: #888;
+}
+
+.vertical {
+  left: -20px;
+  transform: translateY(-50%);
+}
+
+.horizontal {
+  top: -20px;
+  transform: translateX(-50%);
+}
+
+.you-are-here {
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2px 5px;
+  border-radius: 13px;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.axis-label {
+  position: absolute;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.axis-label.vertical {
+  left: -50px;
+  top: 120px;
+  transform: rotate(-90deg);
+}
+
+.axis-label.horizontal {
+  top: -40px;
+  left: 120px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-left: 10px;
+}
+
+.arrow.down {
+  border-width: 6px 4px 0 4px;
+  border-color: #333 transparent transparent transparent;
+}
+
+.arrow.right {
+  border-width: 4px 0 4px 6px;
+  border-color: transparent transparent transparent #333;
+}
+
+.chart-title span.blue {
+  color: blue;
+}
+
+.chart-title span.red {
+  color: red;
+}
