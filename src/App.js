@@ -12,10 +12,9 @@ function App() {
 
   return (
     <div className="App">
-    <title>Your Life in Weeks</title>
     <h1 className="chart-title">
-    <span className="blue">Hidup itu </span>
-    <span className="red">Singkat</span>
+    <span className="red">A 90-Year </span>
+    <span className="blue">Human Life in Chart</span>
     </h1>
       <BirthdateForm onBirthdateChange={setBirthdate} />
       <ComparisonSelector onComparisonChange={setComparison} />
