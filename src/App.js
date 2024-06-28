@@ -12,9 +12,7 @@ function App() {
 
   return (
     <div className="App">
-    <Helmet>
     <title>Your Life in Weeks</title>
-    </Helmet>
       <h1>Hitung Sisa Minggu di Hidupmu</h1>
       <BirthdateForm onBirthdateChange={setBirthdate} />
       <ComparisonSelector onComparisonChange={setComparison} />
